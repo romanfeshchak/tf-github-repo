@@ -1,7 +1,7 @@
 provider "github" {
   owner = var.github_owner
   token = var.github_token
-}
+}  
 
 resource "github_repository" "terraincognitus" {
   name       = var.repository_name

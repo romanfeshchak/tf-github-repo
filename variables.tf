@@ -1,16 +1,16 @@
-variable "github_owner" {
+variable "GITHUB_OWNER" {
   type        = string
   description = "The GitHub owner"
 }
 
-variable "github_token" {
+variable "GITHUB_TOKEN" {
   type        = string
   description = "GitHub personal access token"
 }
 
 variable "repository_name" {
   type        = string
-  default     = "flux-gitops"
+  default     = "flux-ed-gitops"
   description = "GitHub repository"
 }
 

@@ -9,9 +9,6 @@ resource "github_repository" "terraincognitus" {
   auto_init  = true
 }
 
-data "github_repository" "terraincognitus" {
-  full_name = "${var.GITHUB_OWNER}/${var.repository_name}"
-}
 resource "github_repository_deploy_key" "terraincognitus" {
   title      = var.public_key_openssh_title
   repository = github_repository.terraincognitus.name
